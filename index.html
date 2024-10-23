@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Chocobananos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Fondo negro */
+            color: #fff; /* Texto blanco para contraste */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #3e3e3e;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-bottom: 3px solid #fff;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+        .product-display {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .product img {
+            width: 200px;
+            border-radius: 10px;
+            margin: 10px;
+            border: 3px solid #fff;
+        }
+        .product-description {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            color: #000;
+            text-align: center;
+        }
+        .toppings {
+            background-color: #444;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .toppings h2 {
+            color: #fff;
+        }
+        .topping-item {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+        .topping-item img {
+            width: 100px;
+            border-radius: 10px;
+        }
+        .order-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .order-form input, .order-form textarea, .order-form button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .order-form button {
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .order-form button:hover {
+            background-color: #45a049;
+        }
+        .emprendedores {
+            padding: 20px;
+            text-align: left; /* Alinear a la izquierda */
+        }
+        .emprendedores h2 {
+            color: blue; /* Nombres en azul */
+        }
+        .emprendedores ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .emprendedores li {
+            font-size: 18px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chocobananos Deliciosos</h1>
+        <p>¡Los mejores chocobananos en la ciudad!</p>
+    </header>
+
+    <div class="container">
+        <!-- Sección de Emprendedores -->
+        <div class="emprendedores">
+            <h2>Emprendedores</h2>
+            <ul>
+                <li>Steven Gerard Valle Orellana</li>
+                <li>Jason Rolando Melara Fuentes</li>
+                <li>Nallely Betsabé Oviedo Carabantes</li>
+                <li>Rosmi Alexandra Orellana Marroquín</li>
+                <li>Adela Lisbeth Marín Chacón</li>
+            </ul>
+        </div>
+
+        <!-- Sección de Productos -->
+        <div class="product-display">
+            <div class="product">
+                <img src="chocobanano.jpg" alt="Chocobanano">
+            </div>
+            <div class="product">
+                <img src="chocobanano2.jpg" alt="Chocobanano Extra">
+            </div>
+            <div class="product">
+                <img src="chocobanano3.jpg" alt="Chocobanano Con Extra Topping">
+            </div>
+        </div>
+
+        <div class="product-description">
+            <h2>Chocobanano Clásico</h2>
+            <p>Disfruta de un delicioso plátano cubierto de chocolate y acompañado de toppings a tu elección. Perfecto para refrescarte y deleitar tu paladar.</p>
+            <p>Precio: $1.00</p>
+        </div>
+
+        <!-- Sección de Toppings -->
+        <div class="toppings">
+            <h2>Toppings Disponibles</h2>
+            <div class="topping-item">
+                <img src="choco_crispi.jpg" alt="Choco Crispi">
+                <p>Choco Crispi</p>
+            </div>
+            <div class="topping-item">
+                <img src="mani.jpg" alt="Maní">
+                <p>Maní</p>
+            </div>
+            <div class="topping-item">
+                <img src="chispitas.jpg" alt="Chispitas">
+                <p>Chispitas</p>
+            </div>
+        </div>
+
+        <div class="order-form">
+            <h2>Realiza tu pedido</h2>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo" required>
+
+                <label for="quantity">Cantidad:</label>
+                <input type="number" id="quantity" name="quantity" min="1" placeholder="Número de chocobananos" required>
+
+                <label for="message">Mensaje adicional:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Toppings adicionales o instrucciones especiales"></textarea>
+
+                <button type="submit">Enviar Pedido</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
